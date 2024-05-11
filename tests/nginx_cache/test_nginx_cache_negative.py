@@ -19,7 +19,7 @@ def test_cache_deactivate_after_tries(cache_options, prec_http_client_main_servi
     3. Check time uncached calls
     """
     _ = prec_drop_cache_wait
-    _results_drop = get_index_page_until_cache_drop(
+    _ = get_index_page_until_cache_drop(
         prec_http_client_main_service, int(cache_options.CACHE_TIME * 100)
     )
 
