@@ -38,6 +38,8 @@ def prec_drop_cache_wait(
 ) -> List[Tuple[Dict[str, Any], float]]:
     """Prepare dropped cache via wait time.
 
+    :param prec_http_client_main_service: main service http client
+    :param cache_options: cache options
     :return: results (response, time wait) if uncached call
     """
     results = []
@@ -57,6 +59,8 @@ def prec_active_cache_wait(
 ) -> List[Tuple[Dict[str, Any], float]]:
     """Prepare dropped cache via wait time.
 
+    :param prec_http_client_main_service: main server http client
+    :param cache_options: cache options
     :return: (response, time wait)
     """
     results = get_index_page_until_cache_activation(

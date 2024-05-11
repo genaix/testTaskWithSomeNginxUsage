@@ -3,7 +3,6 @@
 from time import sleep
 from typing import Tuple, List, Dict, Any
 
-from tools.steps import step
 from tools.thematic_clients.main_service import HttpClientMainService
 
 
