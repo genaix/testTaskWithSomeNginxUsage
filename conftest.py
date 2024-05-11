@@ -1,8 +1,9 @@
 """Basic conftest PyTest."""
 
-# pytest_plugins = [
-#     'preconditions.folder_name'
-# ]
+pytest_plugins = [
+    'preconditions.clients',
+    'preconditions.cache',
+]
 
 
 def pytest_addoption(parser):
